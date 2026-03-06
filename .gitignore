@@ -1,0 +1,22 @@
+# Données (trop lourdes pour GitHub)
+dataset/
+
+# MLflow runs
+mlruns/
+
+# Environnement virtuel
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Fichiers de données
+*.parquet
+*.csv
+*.zip
+*.docx
