@@ -91,15 +91,25 @@ Ce projet consiste à construire un **modèle de scoring** pour prédire la prob
 git clone <url_du_repo>
 cd <nom_du_repo>
 
+# instller uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 # Créer un environnement virtuel
-python -m venv venv
+uv venv venv
 source venv/bin/activate  # Linux/Mac
 # ou
 venv\Scripts\activate     # Windows
 
 # Installer les dépendances
 pip install -r requirements.txt
+ou
+pip install mlflow scikit-learn pandas numpy matplotlib seaborn jupyterlab
+
+#installer jupyter lab
+pip install jupyterlab
+uv pip install jupyterlab
 ```
+
 
 ---
 
