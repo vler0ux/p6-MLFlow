@@ -101,9 +101,9 @@ source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 
 # Installer les dépendances
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ou
-pip install mlflow scikit-learn pandas numpy matplotlib seaborn jupyterlab
+uv pip install mlflow scikit-learn pandas numpy matplotlib seaborn jupyterlab
 
 #installer jupyter lab
 pip install jupyterlab
@@ -114,9 +114,14 @@ uv pip install jupyterlab
 ---
 
 ## Lancer MLflow UI
+ouvrir un nouveau terminal
 
 ```bash
-mlflow ui
+source venv/bin/activate  # Linux/Mac
+```
+
+```bash
+mlflow ui --backend-store-uri sqlite:///mlflow.db --port 5000
 # Ouvrir http://localhost:5000
 ```
 
