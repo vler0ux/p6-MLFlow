@@ -103,7 +103,7 @@ venv\Scripts\activate     # Windows
 # Installer les dépendances
 uv pip install -r requirements.txt
 ou
-uv pip install mlflow scikit-learn pandas numpy matplotlib seaborn jupyterlab
+uv pip install mlflow scikit-learn pandas numpy matplotlib seaborn jupyterlab xgboost optuna
 
 #installer jupyter lab
 pip install jupyterlab
